@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="exer.asincronias.css">
+    <title>Document</title>
+</head>
+<body>
+  
+    <h1>Asincronias & Promesas</h1>
+  
+    <h2>¿Qué es un archivo JSON?</h2>
+    <p>JSON significa Notación de objetos de JavaScript y es un formato utilizado para estructurar y transferir datos en forma de texto de un sistema a otro, como cliente/servidor y aplicaciones móviles.</p>
+  
+    <h2>¿Qué es la asincronía en Javascript?</h2>
+    <p>La asincronía en Javascript se refiere a procesos que no sabemos cuánto tiempo tardarán en completarse.</p>
+  
+    <h2>¿Qué son las Promesas?</h2>
+    <p>Las Promesas son un mecanismo que JavaScript nos ofrece para gestionar procesos asíncronos. Pueden ocurrir tres cosas:</p>
+    <ul>
+        <li>La promesa se cumple (promesa resuelta).</li>
+        <li>La promesa no se cumple (promesa rechazada).</li>
+        <li>La promesa queda en un estado incierto indefinidamente (promesa pendiente).</li>
+    </ul>
+  
+    <h2>¿Qué es y cómo se usa 'Fetch' en JS?</h2>
+    <p>'Fetch' es una función integrada en JavaScript que se utiliza para realizar solicitudes de red y recuperar recursos del servidor. Se usa normalmente para enviar solicitudes HTTP a las API y recibir los datos correspondientes. Básicamente, se trata de llamar a 'fetch' y pasarle por parámetro la URL de la petición a realizar:</p>
+    <pre><code>const promise = fetch("/robots.txt");
+promise.then(function(response) {
+    // ...
+});</code></pre>
+  
+    <h2>¿Cómo se usa Async/Await?</h2>
+    <p>Async/Await es una característica introducida en JavaScript que proporciona una forma más limpia y legible de trabajar con promesas. El código asíncrono se puede escribir de forma síncrona, lo que hace que el flujo de control sea más fácil de entender y trabajar con él.</p>
+    <p>Para usar async/await, primero debes definir una función con la palabra clave 'async'. Esta función se convierte automáticamente en una función asíncrona que devuelve una promesa. Si usas 'await', debes estar dentro de una función asíncrona.</p>
+    <p>Es importante tener en cuenta que async/await está disponible en navegadores modernos y versiones actualizadas de Node.js.</p>
+  
+    <h2>¿Cuándo deberíamos usar código asíncrono?</h2>
+    <p>El código asíncrono se usa cuando necesitamos realizar una operación que lleva tiempo sin bloquear la ejecución del programa. Esto permite que el hilo principal de ejecución no se bloquee por tareas que pueden llevar mucho tiempo, lo que resulta en una aplicación más eficiente y receptiva.</p>
+  
+    <h3>Práctica:</h3>
+  
+    <table class="table custom-table">
+        <thead class="thead-light">
+            <tr>
+                <th>Título</th>
+                <th>Prioridad</th>
+                <th>Completado</th>
+            </tr>
+        </thead>
+        <tbody id="table-body">
+        </tbody>
+    </table>
+
+    <script src="tabla.exer.js" type="text/javascript"></script>
+</body>
+</html>
